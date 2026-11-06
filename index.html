@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es"><head>
 <meta charset="utf-8">
-<style>html{background:#402310}x-dc{display:none}</style>
-<link rel="preload" as="image" href="assets/d5684417.png" crossorigin>
+<style>html{background:#312e09}x-dc{display:none}</style>
+<link rel="preload" as="image" href="assets/logo-aires.png" crossorigin>
 <script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.production.min.js"};</script>
 <title>Aires Refugio Serrano · Cabaña Algarrobos · Villa La Bolsa, Córdoba</title>
 <meta name="description" content="Cabaña de piedra y madera entre algarrobos en Villa La Bolsa, Córdoba. Pileta, parrilla y deck con vista a las sierras.">
@@ -89,12 +89,12 @@
 
 
 :root {
-  --color-bg: #f5ead8;
-  --color-surface: #ebddc5;
-  --color-text: #201e1d;
-  --color-accent: #c67139;
-  --color-accent-2: #7a8a5e;
-  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+  --color-bg: #f3efe4;
+  --color-surface: #e8e2d1;
+  --color-text: #22210f;
+  --color-accent: #5b5916;
+  --color-accent-2: #989259;
+  --color-divider: color-mix(in srgb, #22210f 16%, transparent);
 
   /* Tonal ramps — generated in OKLCH on one shared lightness scale, so the
      same step of any role matches the others in visual value. */
@@ -108,15 +108,15 @@
   --color-neutral-800: #474238;
   --color-neutral-900: #2e2b25;
 
-  --color-accent-100: #fff2eb;
-  --color-accent-200: #ffe1d0;
-  --color-accent-300: #ffc6a5;
-  --color-accent-400: #f6a06b;
-  --color-accent-500: #d67f48;
-  --color-accent-600: #b2622d;
-  --color-accent-700: #8c491a;
-  --color-accent-800: #643312;
-  --color-accent-900: #402310;
+  --color-accent-100: #f4f3e6;
+  --color-accent-200: #e6e3c9;
+  --color-accent-300: #cdc89b;
+  --color-accent-400: #989259;
+  --color-accent-500: #79762f;
+  --color-accent-600: #5b5916;
+  --color-accent-700: #454015;
+  --color-accent-800: #3a3a0e;
+  --color-accent-900: #312e09;
 
   --color-accent-2-100: #f0fae1;
   --color-accent-2-200: #e1eecc;
@@ -211,8 +211,8 @@ figcaption {
 .btn svg { display: block; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn-primary { background: var(--color-accent); color: var(--color-bg); }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
+.btn-primary:hover { background: var(--color-accent-700); }
+.btn-primary:active { background: var(--color-accent-800); }
 .btn-secondary { border-color: var(--color-divider); }
 .btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
 .btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
@@ -345,20 +345,23 @@ textarea.input { min-height: 90px; resize: vertical; }
 </style>
 <script src="assets/ec20bf98.js"></script>
 <style>
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;background:var(--color-bg);overflow-x:clip}
 body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow-x:clip;text-wrap:pretty;-webkit-font-smoothing:antialiased}
 a{color:var(--color-accent-700);text-decoration:none}
 a:not(.btn):hover{color:var(--color-accent-600)}
 img{display:block}
+.sombra{position:absolute;z-index:-1;pointer-events:none;user-select:none;height:auto;opacity:.08;filter:blur(1.4px)}
+@media (max-width:760px){.sombra{opacity:.06}}
+body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .36 0 0 0 0 .35 0 0 0 0 .09 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 </style>
 </helmet>
 
 <div data-intro="1" style="position:fixed;inset:0;z-index:100;background:var(--color-accent-900);display:grid;place-items:center">
-  <div style="width:min(420px,64vw);aspect-ratio:1184/463;background:var(--color-neutral-200);-webkit-mask:url(&quot;assets/d5684417.png&quot;) center/contain no-repeat;mask:url(&quot;assets/d5684417.png&quot;) center/contain no-repeat"></div>
+  <div style="width:min(420px,64vw);aspect-ratio:1802/708;background:var(--color-neutral-200);-webkit-mask:url(&quot;assets/logo-aires.png&quot;) center/contain no-repeat;mask:url(&quot;assets/logo-aires.png&quot;) center/contain no-repeat"></div>
 </div>
 
-<nav data-nav="1" style="position:fixed;top:14px;left:clamp(12px,3vw,40px);right:clamp(12px,3vw,40px);max-width:1240px;margin:0 auto;z-index:50;display:flex;align-items:center;gap:32px;padding:10px 10px 10px 24px;border-radius:999px;color:var(--color-neutral-100);background:rgba(40,24,12,.28);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(249,244,237,.22);box-shadow:0 8px 32px rgba(30,16,6,.18);transition:background .5s ease,color .5s ease,border-color .5s ease,box-shadow .5s ease">
-  <a href="#inicio" aria-label="Aires Refugio Serrano" style="color:inherit;display:block;width:112px;aspect-ratio:1184/463;background:currentColor;-webkit-mask:url(&quot;assets/d5684417.png&quot;) center/contain no-repeat;mask:url(&quot;assets/d5684417.png&quot;) center/contain no-repeat;flex:none"></a>
+<nav data-nav="1" style="position:fixed;top:14px;left:clamp(12px,3vw,40px);right:clamp(12px,3vw,40px);max-width:1240px;margin:0 auto;z-index:50;display:flex;align-items:center;gap:32px;padding:10px 10px 10px 24px;border-radius:999px;color:var(--color-neutral-100);background:rgba(49,46,9,.28);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(249,244,237,.22);box-shadow:0 8px 32px rgba(33,31,6,.18);transition:background .5s ease,color .5s ease,border-color .5s ease,box-shadow .5s ease">
+  <a href="#inicio" aria-label="Aires Refugio Serrano" style="color:inherit;display:block;width:112px;aspect-ratio:1802/708;background:currentColor;-webkit-mask:url(&quot;assets/logo-aires.png&quot;) center/contain no-repeat;mask:url(&quot;assets/logo-aires.png&quot;) center/contain no-repeat;flex:none"></a>
   <div style="flex:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 28px;height:22px;overflow:hidden;font-size:15px;font-weight:500">
     <a href="#cabana" style="color:inherit">La cabaña</a>
     <a href="#habitaciones" style="color:inherit">Habitaciones</a>
@@ -372,11 +375,11 @@ img{display:block}
   <div data-hero-zoom="1" style="position:absolute;inset:0">
     <img data-hero-img="1" src="assets/549d2f2d.jpg" alt="Cabaña de piedra y ladrillo entre flores y algarrobos" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 72%;will-change:transform,filter">
   </div>
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(40,24,12,.45) 0%, rgba(40,24,12,.12) 30%, rgba(40,24,12,.5) 62%, rgba(40,24,12,.62) 80%, var(--color-bg) 100%)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(49,46,9,.45) 0%, rgba(49,46,9,.12) 30%, rgba(49,46,9,.5) 62%, rgba(49,46,9,.62) 80%, var(--color-bg) 100%)"></div>
   <div data-hero-content="1" style="position:absolute;left:0;right:0;bottom:16vh;padding:0 clamp(20px,5vw,64px);max-width:1240px;margin:0 auto;color:var(--color-neutral-100)">
     <p data-reveal="1" data-hero-item="1" style="margin:0 0 22px;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:var(--color-neutral-100)"><span style="width:8px;height:8px;border-radius:50%;background:var(--color-accent-400);flex:none"></span>Villa La Bolsa, Córdoba</p>
-    <h1 data-reveal="1" data-hero-item="1" data-delay="150" style="margin:0;font-family:var(--font-heading);font-weight:400;font-size:clamp(46px,7.4vw,112px);line-height:.98;letter-spacing:-.01em;text-shadow:0 2px 30px rgba(30,16,6,.35)">Aire de sierra,<br>tiempo lento.</h1>
-    <p data-reveal="1" data-hero-item="1" data-delay="320" style="margin:28px 0 0;max-width:46ch;font-size:clamp(16px,1.4vw,19px);line-height:1.6;color:var(--color-neutral-100);text-shadow:0 1px 16px rgba(30,16,6,.5)">Cabaña Algarrobos: piedra, ladrillo y madera entre algarrobos, a minutos del río Anisacate. Un refugio para desconectar en serio.</p>
+    <h1 data-reveal="1" data-hero-item="1" data-delay="150" style="margin:0;font-family:var(--font-heading);font-weight:400;font-size:clamp(46px,7.4vw,112px);line-height:.98;letter-spacing:-.01em;text-shadow:0 2px 30px rgba(33,31,6,.35)">Aire de sierra,<br>tiempo lento.</h1>
+    <p data-reveal="1" data-hero-item="1" data-delay="320" style="margin:28px 0 0;max-width:46ch;font-size:clamp(16px,1.4vw,19px);line-height:1.6;color:var(--color-neutral-100);text-shadow:0 1px 16px rgba(33,31,6,.5)">Cabaña Algarrobos: piedra, ladrillo y madera entre algarrobos, a minutos del río Anisacate. Un refugio para desconectar en serio.</p>
     <div data-reveal="1" data-hero-item="1" data-delay="480" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
       <a href="#reservar" class="btn btn-primary" style="padding:14px 26px;font-size:16px">Consultar disponibilidad</a>
       <a href="#cabana" style="display:inline-flex;align-items:center;padding:13px 24px;border-radius:999px;border:1.5px solid rgba(249,244,237,.7);color:var(--color-neutral-100);font-weight:600;font-size:16px;backdrop-filter:blur(8px);background:rgba(249,244,237,.08)" style-hover="background:rgba(249,244,237,.2)">Conocer la cabaña</a>
@@ -384,7 +387,8 @@ img{display:block}
   </div>
 </section>
 
-<section style="position:relative;padding:clamp(80px,12vw,160px) clamp(20px,5vw,64px) clamp(60px,8vw,120px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,96px);align-items:center">
+<section style="position:relative;isolation:isolate;padding:clamp(80px,12vw,160px) clamp(20px,5vw,64px) clamp(60px,8vw,120px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,96px);align-items:center">
+  <img class="sombra" src="assets/sombras/algarrobo-a.svg" alt="" aria-hidden="true" style="top:clamp(-20px,-2vw,0px);left:calc(50% - 50vw);width:clamp(300px,44vw,660px);transform:translateX(-12%) rotate(-4deg)">
   <div style="flex:1 1 460px;min-width:0">
     <p data-reveal="1" data-delay="100" style="margin:0;font-family:var(--font-heading);font-size:clamp(28px,3.4vw,46px);line-height:1.18;color:var(--color-accent-900)">Hecha a mano con piedra de la zona, vigas de madera y ladrillo visto. Una casa para despertarse con pájaros, tomar mates en el deck y dejar que la tarde se estire sola.</p>
     <div data-reveal="1" data-delay="250" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:36px">
@@ -401,7 +405,7 @@ img{display:block}
 </section>
 
 
-<section id="cabana" style="padding:0 clamp(20px,5vw,64px) clamp(100px,12vw,170px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap-reverse;gap:clamp(48px,7vw,110px);align-items:center">
+<section id="cabana" style="position:relative;isolation:isolate;padding:0 clamp(20px,5vw,64px) clamp(100px,12vw,170px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap-reverse;gap:clamp(48px,7vw,110px);align-items:center">
   <div style="flex:1.3 1 460px;min-width:0;position:relative;padding-bottom:18%">
     <div data-reveal="img" style="width:74%;aspect-ratio:4/5;border-radius:calc(2 * var(--radius-lg));overflow:hidden;position:relative;box-shadow:var(--shadow-lg)">
       <img data-parallax="0.1" data-zoom="1" src="assets/5796133a.jpg" alt="Comedor con pared de ladrillo y mesa de madera" style="position:absolute;left:0;top:-10%;width:100%;height:120%;object-fit:cover">
@@ -423,7 +427,8 @@ img{display:block}
   </div>
 </section>
 
-<section id="habitaciones" style="background:var(--color-surface);border-radius:clamp(40px,6vw,96px) clamp(40px,6vw,96px) 0 0;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) clamp(110px,12vw,180px)">
+<section id="habitaciones" style="position:relative;isolation:isolate;background:var(--color-surface);border-radius:clamp(40px,6vw,96px) clamp(40px,6vw,96px) 0 0;padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) clamp(110px,12vw,180px)">
+  <img class="sombra" src="assets/sombras/algarrobo-a.svg" alt="" aria-hidden="true" style="top:clamp(-10px,1vw,20px);right:0;width:clamp(280px,40vw,600px);transform:translateX(10%) scaleX(-1) rotate(-6deg)">
   <div style="max-width:1240px;margin:0 auto">
     <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:end;justify-content:space-between;margin-bottom:clamp(48px,6vw,80px)">
       <div>
@@ -458,7 +463,7 @@ img{display:block}
 
 <section id="afuera" style="position:relative;height:115vh;min-height:680px;overflow:hidden;margin-top:-56px;border-radius:clamp(40px,6vw,96px) clamp(40px,6vw,96px) 0 0;background:var(--color-accent-900)">
   <img data-parallax="0.22" data-zoom="1" src="assets/5f12c03a.jpg" alt="Deck de madera con vista a los árboles y la pileta" style="position:absolute;left:0;top:-15%;width:100%;height:130%;object-fit:cover">
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(40,24,12,.15) 0%, rgba(40,24,12,0) 40%, rgba(40,24,12,.35) 100%)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(49,46,9,.15) 0%, rgba(49,46,9,0) 40%, rgba(49,46,9,.35) 100%)"></div>
   <div style="position:absolute;left:clamp(20px,5vw,64px);right:clamp(20px,5vw,64px);bottom:clamp(40px,8vh,96px);max-width:1240px;margin:0 auto">
     <div data-reveal="1" style="max-width:520px;padding:clamp(28px,4vw,48px);border-radius:calc(2 * var(--radius-lg));background:color-mix(in srgb, var(--color-bg) 72%, transparent);backdrop-filter:blur(22px) saturate(1.2);-webkit-backdrop-filter:blur(22px) saturate(1.2);box-shadow:var(--shadow-lg)">
             <h2 style="margin:0;font-size:clamp(32px,3.8vw,52px);line-height:1.05;color:var(--color-accent-900)">Un deck que mira a las sierras</h2>
@@ -467,7 +472,8 @@ img{display:block}
   </div>
 </section>
 
-<section style="padding:clamp(90px,11vw,160px) clamp(20px,5vw,64px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(48px,7vw,110px);align-items:center">
+<section style="position:relative;isolation:isolate;padding:clamp(90px,11vw,160px) clamp(20px,5vw,64px);max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(48px,7vw,110px);align-items:center">
+  <img class="sombra" src="assets/sombras/algarrobo-b.svg" alt="" aria-hidden="true" style="top:-40px;right:calc(50% - 50vw);width:clamp(240px,30vw,460px);transform:translateX(18%) rotate(-8deg)">
   <div style="flex:1.2 1 420px;min-width:0">
     <h2 data-reveal="1" data-delay="100" style="margin:0;font-size:clamp(36px,4.4vw,60px);line-height:1.04;color:var(--color-accent-900)">Lo que te espera</h2>
     <div data-reveal="1" data-delay="200" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:32px 40px;margin-top:48px">
@@ -488,7 +494,8 @@ img{display:block}
   </div>
 </section>
 
-<section id="ubicacion" style="padding:0 clamp(20px,5vw,64px) clamp(100px,12vw,170px);max-width:1240px;margin:0 auto">
+<section id="ubicacion" style="position:relative;isolation:isolate;padding:0 clamp(20px,5vw,64px) clamp(100px,12vw,170px);max-width:1240px;margin:0 auto">
+  <img class="sombra" src="assets/sombras/algarrobo-a.svg" alt="" aria-hidden="true" style="bottom:clamp(-60px,-3vw,0px);left:calc(50% - 50vw);width:clamp(280px,38vw,560px);transform:translateX(-14%) scaleY(-1) rotate(6deg)">
   <div style="display:flex;flex-wrap:wrap;gap:48px clamp(48px,7vw,110px);align-items:center">
     <div style="flex:1 1 380px;min-width:0">
       <h2 data-reveal="1" data-delay="100" style="margin:0;font-size:clamp(34px,4vw,54px);line-height:1.06;color:var(--color-accent-900)">Villa La Bolsa, en el corazón de Paravachasca</h2>
@@ -509,20 +516,20 @@ img{display:block}
     <h2 data-reveal="1" data-delay="100" style="margin:0;font-size:clamp(40px,6vw,88px);line-height:1;max-width:15ch;color:var(--color-neutral-100)">Tu escapada serrana empieza con un mensaje</h2>
     <p data-reveal="1" data-delay="200" style="margin:28px 0 0;font-size:18px;line-height:1.65;color:var(--color-neutral-300);max-width:44ch">Escribinos y armamos juntos tu estadía: fechas, cantidad de huéspedes y todo lo que necesites saber.</p>
     <div data-reveal="1" data-delay="300" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px">
-      <a href="https://wa.me/5493512681616" target="_blank" rel="noopener" class="btn btn-primary" style="padding:15px 28px;font-size:16px">Escribir por WhatsApp</a>
-      <a href="https://www.instagram.com/aires_labolsa/" style="display:inline-flex;align-items:center;padding:14px 26px;border-radius:999px;border:1.5px solid var(--color-accent-300);color:var(--color-neutral-100);font-weight:600;font-size:16px" style-hover="background:rgba(255,198,165,.12);color:var(--color-neutral-100)">@aires_labolsa</a>
+      <a href="https://wa.me/5493512681616" target="_blank" rel="noopener" class="btn btn-primary" style="padding:15px 28px;font-size:16px;background:var(--color-accent-400);color:var(--color-accent-900)">Escribir por WhatsApp</a>
+      <a href="https://www.instagram.com/aires_labolsa/" style="display:inline-flex;align-items:center;padding:14px 26px;border-radius:999px;border:1.5px solid var(--color-accent-300);color:var(--color-neutral-100);font-weight:600;font-size:16px" style-hover="background:rgba(205,200,155,.12);color:var(--color-neutral-100)">@aires_labolsa</a>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:end;justify-content:space-between;margin-top:clamp(90px,12vw,160px);padding-top:32px;border-top:1px solid rgba(249,244,237,.16)">
-      <div style="width:min(300px,60vw);aspect-ratio:1184/463;background:var(--color-accent-300);-webkit-mask:url(&quot;assets/d5684417.png&quot;) left center/contain no-repeat;mask:url(&quot;assets/d5684417.png&quot;) left center/contain no-repeat"></div>
+      <div style="width:min(300px,60vw);aspect-ratio:1802/708;background:var(--color-accent-300);-webkit-mask:url(&quot;assets/logo-aires.png&quot;) left center/contain no-repeat;mask:url(&quot;assets/logo-aires.png&quot;) left center/contain no-repeat"></div>
       <p style="margin:0;font-size:14px;line-height:1.6;color:var(--color-neutral-400);text-align:right">Cabaña Algarrobos · Villa La Bolsa, Córdoba, Argentina<br>© 2026 Aires Refugio Serrano</p>
     </div>
   </div>
 </section>
 
 <sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
-  <div sc-camel-on-click="{{ closeLb }}" style="position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:clamp(16px,4vw,56px);background:rgba(40,24,12,.66);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);opacity:{{ lbOpacity }};transition:opacity .35s ease;cursor:zoom-out">
+  <div sc-camel-on-click="{{ closeLb }}" style="position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:clamp(16px,4vw,56px);background:rgba(49,46,9,.66);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);opacity:{{ lbOpacity }};transition:opacity .35s ease;cursor:zoom-out">
     <figure style="margin:0;display:grid;gap:16px;justify-items:center;transform:scale({{ lbScale }});filter:blur({{ lbBlur }}px);transition:transform .5s cubic-bezier(.2,.7,.2,1),filter .4s ease">
-      <img src="{{ lbSrc }}" alt="{{ lbAlt }}" sc-camel-on-click="{{ stop }}" style="max-width:min(1100px,88vw);max-height:80vh;width:auto;height:auto;border-radius:calc(2 * var(--radius-lg));box-shadow:0 30px 80px rgba(20,10,4,.45);cursor:default">
+      <img src="{{ lbSrc }}" alt="{{ lbAlt }}" sc-camel-on-click="{{ stop }}" style="max-width:min(1100px,88vw);max-height:80vh;width:auto;height:auto;border-radius:calc(2 * var(--radius-lg));box-shadow:0 30px 80px rgba(24,23,4,.45);cursor:default">
       <figcaption style="color:var(--color-neutral-100);font-size:15px">{{ lbAlt }}</figcaption>
     </figure>
     <button type="button" aria-label="Anterior" sc-camel-on-click="{{ prevLb }}" style="position:absolute;left:clamp(12px,3vw,40px);top:50%;margin-top:-26px;width:52px;height:52px;border-radius:50%;border:1px solid rgba(249,244,237,.3);background:rgba(249,244,237,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--color-neutral-100);display:grid;place-items:center;cursor:pointer" style-hover="background:rgba(249,244,237,.28)"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg></button>
@@ -613,8 +620,8 @@ class Component extends DCLogic {
         if (on !== navOn && nav) {
           navOn = on;
           Object.assign(nav.style, on
-            ? { background: 'color-mix(in srgb, var(--color-bg) 62%, transparent)', borderColor: 'rgba(100,51,18,.12)', color: 'var(--color-accent-900)', boxShadow: 'var(--shadow-md)' }
-            : { background: 'rgba(40,24,12,.28)', borderColor: 'rgba(249,244,237,.22)', color: 'var(--color-neutral-100)', boxShadow: '0 8px 32px rgba(30,16,6,.18)' });
+            ? { background: 'color-mix(in srgb, var(--color-bg) 62%, transparent)', borderColor: 'rgba(69,64,21,.12)', color: 'var(--color-accent-900)', boxShadow: 'var(--shadow-md)' }
+            : { background: 'rgba(49,46,9,.28)', borderColor: 'rgba(249,244,237,.22)', color: 'var(--color-neutral-100)', boxShadow: '0 8px 32px rgba(33,31,6,.18)' });
         }
       }
       if (par && !reduce) {
